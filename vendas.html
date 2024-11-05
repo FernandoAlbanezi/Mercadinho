@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Vendas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barra de navegação -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Sistema de Mercado</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="clientes.html">Cadastro de Clientes</a></li>
+                <li><a href="funcionarios.html">Cadastro de Funcionários</a></li>
+                <li><a href="produtos.html">Cadastro de Produtos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="areaVendas">
+            <h2>Área de Vendas</h2>
+            <form id="formVenda">
+                <label for="produtoEscolhido">Escolha o Produto:</label>
+                <select id="produtoEscolhido" name="produtoEscolhido" required>
+                    <option value="">Selecione um Produto</option>
+                    <!-- Produtos serão inseridos aqui via JS -->
+                </select>
+                <label for="quantidadeVenda">Quantidade:</label>
+                <input type="number" id="quantidadeVenda" name="quantidadeVenda" required>
+                <button type="submit">Comprar</button>
+            </form>
+            <div id="vendasRegistradas">
+                <!-- Vendas registradas serão exibidas aqui -->
+            </div>
+            <br>
+            <button onclick="window.location.href='index.html'">Voltar para Página Inicial</button>
+       
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

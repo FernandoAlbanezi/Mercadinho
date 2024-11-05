@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barra de navegação -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Sistema de Mercado</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="clientes.html">Cadastro de Clientes</a></li>
+                <li><a href="funcionarios.html">Cadastro de Funcionários</a></li>
+                <li><a href="vendas.html">Área de Vendas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="formCadastroProduto">
+            <h2>Cadastro de Produto</h2>
+            <form id="formCadastroProdutoForm">
+                <label for="nomeProduto">Nome:</label>
+                <input type="text" id="nomeProduto" name="nomeProduto" required>
+
+                <label for="precoProduto">Preço:</label>
+                <input type="number" id="precoProduto" name="precoProduto" required>
+
+                <label for="quantidadeProduto">Quantidade:</label>
+                <input type="number" id="quantidadeProduto" name="quantidadeProduto" required>
+
+                <button type="submit">Cadastrar Produto</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

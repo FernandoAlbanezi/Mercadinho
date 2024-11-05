@@ -1,0 +1,175 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos do Header e Navbar */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar .logo h1 {
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+}
+
+/* Estilos do conteúdo principal */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Estilos das seções */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para os botões de retorno */
+button.retornar {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button.retornar:hover {
+    background-color: #45a049; /* Tom de verde mais escuro */
+}
+
+/* Estilos dos formulários e inputs */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    font-size: 16px;
+}
+
+/* Estilos do estoque e vendas */
+#produtosCadastrados, #vendasRegistradas {
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 5px;
+}
+
+#produtosCadastrados p, #vendasRegistradas p {
+    margin: 10px 0;
+}
+
+/* Estilos das listas de produtos */
+#produtosCadastrados ul, #vendasRegistradas ul {
+    list-style: none;
+}
+
+#produtosCadastrados li, #vendasRegistradas li {
+    margin-bottom: 10px;
+}
+
+/* Estilos das seções de cadastro */
+#formCadastroProduto, #formCadastroCliente, #formCadastroFuncionario {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}

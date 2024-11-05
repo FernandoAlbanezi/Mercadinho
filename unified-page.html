@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Mercado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Mercado</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="clientes.html">Cadastro de Clientes</a></li>
+                <li><a href="funcionarios.html">Cadastro de Funcionários</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <!-- Cadastro de Produto -->
+        <section id="formCadastroProduto">
+            <h2>Cadastro de Produto</h2>
+            <form id="formCadastroProdutoForm">
+                <label for="nomeProduto">Nome:</label>
+                <input type="text" id="nomeProduto" name="nomeProduto" required>
+                
+                <label for="precoProduto">Preço:</label>
+                <input type="number" id="precoProduto" name="precoProduto" required>
+
+                <label for="quantidadeProduto">Quantidade:</label>
+                <input type="number" id="quantidadeProduto" name="quantidadeProduto" required>
+
+                <button type="submit">Cadastrar Produto</button>
+            </form>
+        </section>
+
+        <!-- Estoque de Produtos -->
+        <section id="estoque">
+            <h2>Estoque de Produtos</h2>
+            <div id="produtosCadastrados">
+                <!-- Produtos cadastrados serão exibidos aqui -->
+            </div>
+        </section>
+
+        <!-- Área de Vendas -->
+        <section id="areaVendas">
+            <h2>Área de Vendas</h2>
+            <form id="formVenda">
+                <label for="produtoEscolhido">Escolha o Produto:</label>
+                <select id="produtoEscolhido" name="produtoEscolhido" required>
+                    <option value="">Selecione um Produto</option>
+                    <!-- Produtos serão inseridos aqui via JS -->
+                </select>
+                <label for="quantidadeVenda">Quantidade:</label>
+                <input type="number" id="quantidadeVenda" name="quantidadeVenda" required>
+                <button type="submit">Comprar</button>
+            </form>
+            <div id="vendasRegistradas">
+                <!-- Vendas registradas serão exibidas aqui -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
